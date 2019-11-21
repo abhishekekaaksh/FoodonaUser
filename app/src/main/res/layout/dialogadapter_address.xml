@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+
+        <ImageView
+            android:id="@+id/checksign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_circle_red" />
+
+        <TextView
+            android:id="@+id/tv_getaddres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/edit"
+            android:layout_toRightOf="@+id/checksign"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="Abhishek sharmaabhishek shek sharma abhbisher sharma abhishek " />
+
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_mode_edit_black_24dp" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete_forever_black_24dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

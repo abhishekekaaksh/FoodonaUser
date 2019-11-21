@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">foodona</string>
+    <string name="exd">Exclusive\n Delivery</string>
+    <string name="order">order</string>
+    <string name="order_details">Order Details</string>
+
+    <string name="cart">My Cart</string>
+    <string name="support">Support</string>
+    <string name="yourorder">Your Order</string>
+
+    <string name="waitting">Waitting for the restaurent to confirm your order</string>
+
+    <string name="address">Plot 1 near Kerla gali choudhary hotel char bazar</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="profile">My Profile</string>
+    <string name="viod">View\n Offers</string>
+    <string name="free">Free\n Delivery</string>
+    <string name="bev">Bevarage</string>
+    <string name="veg">Vegatarian</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="lbl_view_cart">VIEW CART</string>
+    <string name="lbl_your_cart">Your Cart</string>
+    <string name="waiting_msg">Order Placed. Waiting for restaurant confirmation..  </string>
+    <string name="confirmation_msg">sit back and relax,Burger farm usually accepts order vewry quickly.  </string>
+
+    <string name="title_search">Search</string>
+    <string name="please_wait">Please Wait..</string>
+    <string name="title_shooping">Dashboard</string>
+    <string name="title_user">User</string>
+    <string name="amount">Amount</string>
+    <string name="location">Your Location</string>
+    <string name="selectaddress">Select an address</string>
+    <string name="deliver">Deliver To</string>
+    <string name="phone">Phone Number</string>
+    <string name="paid">Payment</string>
+    <string name="tell_us">Tell us a little something about yourself (in less than 150 characters)</string>
+
+    <string name="change">CHANGE</string>
+    <string name="addaddress">Add Address</string>
+    <string name="saveaddress">Saved Address</string>
+
+
+    <string name="about">About</string>
+    <string name="markas">mark As favorite</string>
+    <string name="response">[{"status":"Failed","error":"variable not set"}]</string>
+    <string name="price">\u20B9</string>
+    <string name="applyc">Apply Coupan</string>
+    <string name="please">please</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_orederconfirmation">OrederconfirmationActivity</string>
+    <string name="title_activity_restaurent_order_summary">RestaurentOrderSummary</string>
+    <string name="title_activity_user_profile_fragment">UserProfileFragmentActivity</string>
+    <string name="title_activity_order_history">OrderHistory</string>
+
+
+</resources>

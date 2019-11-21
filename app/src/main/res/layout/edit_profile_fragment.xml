@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_left"
+            android:backgroundTint="@color/black" />
+        <TextView
+            android:layout_toRightOf="@+id/back"
+            android:id="@+id/title"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Edit Profile"
+            android:textColor="@color/black_light"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/editprofilecardview"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                card_view:cardCornerRadius="@dimen/card_album_radius"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/img_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/banner" />
+
+                <TextView
+                    android:id="@+id/edit_cover_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_text_size"
+                    android:background="#80555353"
+                    android:text="Edit"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:id="@+id/profilephoto"
+                android:layout_width="48dp"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:layout_height="48dp"
+                android:layout_below="@+id/editprofilecardview"
+android:layout_marginTop="5dp"
+
+                 />
+
+
+            <TextView
+                android:id="@+id/addphoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/editprofilecardview"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@+id/profilephoto"
+                android:drawableLeft="@drawable/ic_camera_alt_red_24dp"
+                android:drawablePadding="5dp"
+                android:text="Add Photo"
+                android:textColor="@color/red"
+                android:textSize="@dimen/mediun_textt_size" />
+
+            <TextView
+                android:id="@+id/textline"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/profilephoto"
+                android:layout_margin="5dp"
+
+                android:layout_marginTop="10dp"
+                android:background="@color/black" />
+
+            <EditText
+                android:id="@+id/edit_usernamee"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textline"
+                android:layout_margin="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/edit_singe_bottom_line"
+                android:hint="Name"
+                android:padding="5dp" />
+            <EditText
+                android:id="@+id/edit_useremail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edit_usernamee"
+                android:layout_margin="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/edit_singe_bottom_line"
+                android:hint="Email"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edit_useremail"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edit_button"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/edit_location"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edit_phone"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edit_singe_bottom_line"
+                android:hint="@string/location"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/edit_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_location"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edit_singe_bottom_line"
+                android:hint="@string/tell_us"
+                android:lines="2"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/edit_bio"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/login_button"
+                android:text="submit"
+                android:textColor="@color/white" />
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:indicatorColor="#fa0202"
+                app:indicatorName="BallPulseIndicator" />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

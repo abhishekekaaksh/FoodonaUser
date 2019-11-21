@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activityPadding">16dp</dimen>
+    <dimen name="placeholderImage">60dp</dimen>
+    <dimen name="placeholderTextHeight">8dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="mediun_textt_size">16sp</dimen>
+    <dimen name="mediun_texttt_size">17sp</dimen>
+
+    <dimen name="mediun_text_size">18sp</dimen>
+    <dimen name="larg_text_size">20sp</dimen>
+    <dimen name="large_text_size">22sp</dimen>
+    <dimen name="larges_text_size">24sp</dimen>
+
+
+    <dimen name="card_album_radius">12dp</dimen>
+</resources>

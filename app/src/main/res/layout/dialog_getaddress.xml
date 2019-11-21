@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tv_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_selectaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_regular"
+            android:text="@string/selectaddress"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_close" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/addadress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/tv_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:tint="@color/gradient"
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_add" />
+        <TextView
+            android:layout_toRightOf="@+id/plus"
+            android:id="@+id/tv_addaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_regular"
+            android:text="@string/addaddress"
+            android:textColor="@color/gradient"
+            android:textSize="@dimen/mediun_text_size" />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/tv_save"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/addadress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_savedaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_regular"
+            android:text="@string/saveaddress"
+            android:textColor="@color/gradient"
+            android:textSize="@dimen/mediun_text_size" />
+
+
+
+    </RelativeLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/getrecycleaddress"
+    android:layout_below="@+id/tv_save"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

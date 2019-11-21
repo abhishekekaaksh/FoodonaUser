@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Restarant.restaurant.UserProfileFragmentActivity">
+
+    <RelativeLayout
+        android:id="@+id/topheader"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/banner">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/back_left" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:text="Abhishek"
+            android:textColor="@color/black"
+            android:textSize="@dimen/larges_text_size" />
+
+        <TextView
+            android:id="@+id/tv_userfollower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_username"
+            android:text=" 0      Followers"
+            android:textSize="@dimen/mediun_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_userlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_userfollower"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_place_red"
+            android:drawablePadding="5sp"
+            android:text="Jaipur"
+            android:textSize="@dimen/mediun_text_size" />
+
+        <TextView
+            android:id="@+id/tv_useremail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_userlocation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="@dimen/small_text_size"
+            android:text="xyz@xyz.com "
+            android:textSize="@dimen/mediun_text_size" />
+
+        <TextView
+            android:id="@+id/tv_userphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_useremail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="@dimen/small_text_size"
+            android:text="8107116566 "
+            android:textSize="@dimen/mediun_text_size" />
+
+        <TextView
+            android:id="@+id/tv_userbio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_userphone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="@dimen/small_text_size"
+            android:text="Honestly "
+            android:textSize="@dimen/mediun_text_size" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/logo"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_userbio"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:text="Edit"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/tv_userorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_userbio"
+            android:layout_marginTop="10dp"
+            android:text="My Orders"
+            android:textSize="@dimen/mediun_text_size" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/userprofile"
+        android:background="@color/black" />
+
+
+</RelativeLayout>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Restarant.restaurant.RestaurentCart">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/backimage"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/back_left" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/red">
+
+        <TextView
+            android:id="@+id/tv_delivery"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/raleway_regular"
+            android:text="DELIVERY AT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_text_size" />
+
+        <ImageView
+            android:id="@+id/checksign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/tv_delivery"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_check_circle" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_toLeftOf="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:layout_below="@+id/tv_delivery"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/checksign"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="Jaipur"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mediun_text_size" />
+
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_delivery"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:padding="2dp"
+            android:text="@string/change"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mediun_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/restcart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:id="@+id/reloi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dish_cart"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                app:srcCompat="@drawable/pizzaone" />
+
+            <RelativeLayout
+                android:id="@+id/cart_plus_min_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dish_cart"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/cart_plus_minus_layout"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/add_btn"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/cart_minus_img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:src="@drawable/ic_minus"
+                        android:tint="@color/red" />
+
+                    <TextView
+                        android:id="@+id/quantity_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="15dip"
+                        android:text="0"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/cart_plus_img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_plus"
+                        android:tint="@color/red" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/add_btn"
+                    android:text="Add     +"
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/veigitable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="vegitable"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/veg_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/veigitable"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="90"
+                    android:textColor="#1d1d1d"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/qua_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cart_plus_minus_layout"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="90"
+                    android:textColor="#1d1d1d"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclercart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dish_cart" />
+
+            <RelativeLayout
+                android:id="@+id/coupan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/whiteborder"
+
+                android:background="@color/red">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_right_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/applyc"
+                    android:textColor="@color/white"
+                    android:textSize="8pt" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/billdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/whiteeborder"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/billdet_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Bill Details"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/itemtolr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/billdet_text"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Item Total"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/itemtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/billdet_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="0"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/rest_ch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/itemtolr"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Restaurent Charges"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/res_total_charg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/itemtotal"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="7.00"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tot_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/res_total_charg"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Total Discount"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/res_total_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/res_total_charg"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="10dp"
+
+                    android:fontFamily="@font/lato_bold"
+                    android:text="7.00"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/bel_bill"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/res_total_dis"
+                    android:layout_marginTop="7dp"
+                    android:background="#E9E7E7" />
+
+
+                <TextView
+                    android:id="@+id/del_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bel_bill"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Delivery Fee"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/del_total_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bel_bill"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="17.00"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/del_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/del_total_fee"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/grey" />
+
+            </RelativeLayout>
+
+            <!--  <TextView
+                  android:layout_margin="40dp"
+                  android:textSize="7pt"
+                  android:layout_below="@+id/dish_cart"
+                  android:id="@+id/burger"
+                  android:text="Burger chicken"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />-->
+            <TextView
+                android:id="@+id/whiteborder"
+                android:layout_width="match_parent"
+
+                android:layout_height="8dp"
+                android:layout_below="@+id/recyclercart"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/timedish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cate"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/dish_cart"
+                android:text="38 mins"
+                android:textColor="@color/black"
+                android:textSize="6pt"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/dishna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/dish_cart"
+                android:fontFamily="@font/raleway_semibold"
+
+                android:text="Pizza Palace"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/cate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dishna"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/dish_cart"
+                android:fontFamily="@font/opensans_bold"
+                android:text="Pizza Palace"
+                android:textSize="11sp"
+
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/whiteeborder"
+                android:layout_width="match_parent"
+
+                android:layout_height="8dp"
+                android:layout_below="@+id/coupan"
+                android:background="@color/grey" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorColor="#fa0202"
+        app:indicatorName="BallPulseIndicator" />
+
+    <Button
+        android:id="@+id/total_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/order"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</RelativeLayout>

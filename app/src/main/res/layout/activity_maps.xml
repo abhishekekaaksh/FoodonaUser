@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Restarant.adapterRestaurant.RestaurantAdapter">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:context=".Restarant.Map.MapsActivity" />
+
+    <RelativeLayout
+        android:id="@+id/locationlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_your_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            android:textColor="@color/black_light" />
+
+        <TextView
+            android:id="@+id/tv_set_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_your_location"
+            android:layout_toLeftOf="@+id/tv_set_change"
+            android:drawableLeft="@drawable/ic_check_blue"
+            android:drawablePadding="10dip"
+            android:drawableTint="@color/red"
+            android:textSize="@dimen/mediun_textt_size"
+            android:paddingLeft="8dp"
+            android:text="@string/location" />
+
+        <TextView
+            android:id="@+id/tv_set_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_your_location"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="8dp"
+            android:text="Change"
+            android:textColor="@color/red" />
+
+        <EditText
+            android:padding="2dp"
+            android:id="@+id/completaddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Complet Address"
+            android:layout_below="@+id/tv_set_location"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_button" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/savelocation"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/locationlayout"
+        android:background="@color/red"
+        android:text="Save"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/back"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/back_left" />
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorColor="#fa0202"
+        app:indicatorName="BallPulseIndicator" />
+</RelativeLayout>
+
+
+

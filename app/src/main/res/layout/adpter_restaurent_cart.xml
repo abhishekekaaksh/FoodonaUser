@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/cart_plus_min_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/dish_cart"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:id="@+id/cart_plus_minus_layout"
+            android:layout_width="82dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/add_btn"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/cart_minus_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/ic_minus"
+                android:tint="@color/red" />
+            <TextView
+                android:id="@+id/quantity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="0"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/cart_plus_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_plus"
+                android:tint="@color/red" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/add"
+            android:visibility="gone"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/add_btn"
+            android:text="Add     +"
+            android:textColor="@color/red" />
+        <ImageView
+            android:id="@+id/rest_cartpic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo" />
+        <TextView
+            android:id="@+id/veigitable"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/rest_cartpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="vegitable"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/veg_price"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/veigitable"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_toRightOf="@+id/rest_cartpic"
+            android:text="90"
+            android:textColor="#1d1d1d"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/qua_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_plus_minus_layout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="90"
+            android:textColor="#1d1d1d"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</LinearLayout>

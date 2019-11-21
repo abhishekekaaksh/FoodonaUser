@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/d_pic"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/im_background"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/pizzaone" />
+
+        <ImageView
+            android:id="@+id/lite"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/d_pic"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/pizzaone" />
+        <TextView
+            android:id="@+id/dishname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d_pic"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/lite"
+            android:text="Farm Pizza"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dishname"
+            android:layout_margin="5dp"
+            android:text="@string/price"
+            android:textSize="7pt" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/dishname"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/price"
+            android:background="@drawable/bg_key"
+            android:text="Add  +"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

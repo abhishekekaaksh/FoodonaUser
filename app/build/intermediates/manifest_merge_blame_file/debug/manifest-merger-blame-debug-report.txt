@@ -1,0 +1,370 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.foodona.foodona"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml
+10    <!--
+11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+12         Google Maps Android API v2, but you must specify either coarse or fine
+13         location permissions for the 'MyLocation' functionality.
+14    -->
+15
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:11:5-79
+16-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:12:5-76
+17-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:12:22-73
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:13:5-81
+18-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:13:22-78
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:14:5-66
+19-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:14:22-64
+20    <uses-permission android:name="android.permission.CAMERA" />
+20-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:15:5-64
+20-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:15:22-62
+21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+21-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:16:5-79
+21-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:16:22-77
+22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+22-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:17:5-80
+22-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:17:22-78
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:24:5-79
+23-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:24:22-76
+24    <uses-permission android:name="android.permission.WAKE_LOCK" />
+24-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:25:5-68
+24-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:25:22-65
+25    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+25-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:26:5-110
+25-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:26:22-107
+26    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+26-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\85573c4148afa9d627bdb58c338f2f7a\firebase-iid-20.0.0\AndroidManifest.xml:26:5-82
+26-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\85573c4148afa9d627bdb58c338f2f7a\firebase-iid-20.0.0\AndroidManifest.xml:26:22-79
+27
+28    <uses-feature
+28-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\10496f710d269c4bbf750af6c3496e37\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+29        android:glEsVersion="0x00020000"
+29-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\10496f710d269c4bbf750af6c3496e37\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+30        android:required="true" />
+30-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\10496f710d269c4bbf750af6c3496e37\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+31
+32    <application
+32-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:19:5-122:19
+33        android:allowBackup="true"
+33-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:20:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.1.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\3bcafbc2e95e113b9db4402c8bff255d\core-1.1.0\AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:icon="@drawable/logo"
+36-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:21:9-38
+37        android:label="@string/app_name"
+37-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:22:9-41
+38        android:networkSecurityConfig="@xml/network_security_config"
+38-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:23:9-69
+39        android:roundIcon="@drawable/logo"
+39-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:24:9-43
+40        android:supportsRtl="true"
+40-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:25:9-35
+41        android:testOnly="true"
+42        android:theme="@style/AppTheme"
+42-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:26:9-40
+43        android:usesCleartextTraffic="true" >
+43-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:27:9-44
+44        <activity
+44-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:28:9-31:68
+45            android:name="com.foodona.foodona.Restarant.Activity.OrderHistory"
+45-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:29:13-60
+46            android:label="@string/title_activity_order_history"
+46-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:30:13-65
+47            android:theme="@style/AppTheme.NoActionBar" />
+47-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:31:13-56
+48        <activity
+48-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:32:9-35:59
+49            android:name="com.foodona.foodona.Restarant.restaurant.UserProfileFragmentActivity"
+49-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:33:13-77
+50            android:label="@string/title_activity_user_profile_fragment"
+50-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:34:13-73
+51            android:theme="@style/AppTheme.NoActionBar" />
+51-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:35:13-56
+52        <!--
+53             The API key for Google Maps-based APIs is defined as a string resource.
+54             (See the file "res/values/google_maps_api.xml").
+55             Note that the API key is linked to the encryption key used to sign the APK.
+56             You need a different API key for each encryption key, including the release key that is used to
+57             sign the APK for publishing.
+58             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+59        -->
+60        <activity android:name="com.foodona.foodona.Restarant.Map.EditAddress" />
+60-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:44:9-62
+60-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:44:19-60
+61        <activity android:name="com.foodona.foodona.Restarant.restaurant.EditUserAddress" />
+61-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:45:9-73
+61-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:45:19-71
+62        <activity
+62-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:46:9-48:59
+63            android:name="com.foodona.foodona.Restarant.Map.MapsActivity"
+63-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:47:13-55
+64            android:label="@string/title_activity_maps" />
+64-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:48:13-56
+65        <activity
+65-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:49:9-52:59
+66            android:name="com.foodona.foodona.Restarant.restaurant.RestaurentOrderSummary"
+66-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:50:13-72
+67            android:label="@string/title_activity_restaurent_order_summary"
+67-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:51:13-76
+68            android:theme="@style/AppTheme.NoActionBar" />
+68-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:52:13-56
+69        <activity
+69-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:53:9-56:59
+70            android:name="com.foodona.foodona.Restarant.restaurant.OrederconfirmationActivity"
+70-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:54:13-76
+71            android:label="@string/title_activity_orederconfirmation"
+71-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:55:13-70
+72            android:theme="@style/AppTheme.NoActionBar" />
+72-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:56:13-56
+73        <!--
+74             The API key for Google Maps-based APIs is defined as a string resource.
+75             (See the file "res/values/google_maps_api.xml").
+76             Note that the API key is linked to the encryption key used to sign the APK.
+77             You need a different API key for each encryption key, including the release key that is used to
+78             sign the APK for publishing.
+79             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+80        -->
+81        <activity android:name="com.foodona.foodona.FreshFood.Foodcategory.NavigationActivity" />
+81-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:65:9-79
+81-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:65:19-76
+82        <!--
+83             <meta-data
+84            android:name="com.google.android.gms.ads.APPLICATION_ID"
+85            android:value="@string/admob_app_id" />
+86        -->
+87        <activity android:name="com.foodona.foodona.Restarant.Activity.Splash_Activity" >
+87-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:71:9-77:20
+87-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:71:19-69
+88            <intent-filter>
+88-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:72:13-76:29
+89                <action android:name="android.intent.action.MAIN" />
+89-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:73:17-69
+89-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:73:25-66
+90
+91                <category android:name="android.intent.category.LAUNCHER" />
+91-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:75:17-77
+91-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:75:27-74
+92            </intent-filter>
+93        </activity>
+94        <activity
+94-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:78:9-81:76
+95            android:name="com.foodona.foodona.Restarant.Activity.Sign_In_Activity"
+95-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:79:13-64
+96            android:screenOrientation="portrait"
+96-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:80:13-49
+97            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+97-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:81:13-73
+98        <activity
+98-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:82:9-85:76
+99            android:name="com.foodona.foodona.Restarant.Activity.Sign_Up_Activity"
+99-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:83:13-64
+100            android:screenOrientation="portrait"
+100-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:84:13-49
+101            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+101-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:85:13-73
+102        <!-- <activity android:name=".Restarant.restaurant.RestaurentCart" /> -->
+103        <activity
+103-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:87:9-90:76
+104            android:name="com.foodona.foodona.MainActivity"
+104-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:88:13-41
+105            android:screenOrientation="portrait"
+105-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:89:13-49
+106            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+106-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:90:13-73
+107        <activity android:name="com.foodona.foodona.Restarant.Navigation.BottomNavigationActivity" />
+107-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:91:9-83
+107-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:91:19-80
+108        <activity android:name="com.foodona.foodona.Restarant.restaurant.SingleRestaurent" />
+108-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:92:9-75
+108-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:92:19-72
+109        <activity android:name="com.foodona.foodona.Restarant.Map.mapsm" />
+109-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:93:9-57
+109-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:93:19-54
+110        <!--
+111      <activity
+112            android:name=".Activity.Forgot_Pass_Activity"
+113            android:screenOrientation="portrait"
+114            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+115        <activity
+116            android:name=".Activity.Change_Password_Activity"
+117            android:screenOrientation="portrait"
+118            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+119        <activity
+120            android:name=".Activity.Help_Activity"
+121            android:screenOrientation="portrait"
+122            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+123        -->
+124        <service
+124-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:108:9-114:19
+125            android:name="com.foodona.foodona.Restarant.Firebase.MyFirebaseMessagingService"
+125-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:109:13-74
+126            android:exported="false" >
+126-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:110:13-37
+127            <intent-filter>
+127-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:111:13-113:29
+128                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+128-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:112:17-78
+128-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:112:25-75
+129            </intent-filter>
+130        </service>
+131
+132        <meta-data
+132-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:116:9-118:55
+133            android:name="com.google.android.maps.v2.API_KEY"
+133-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:117:13-62
+134            android:value="@string/google_maps_key" />
+134-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:118:13-52
+135        <meta-data
+135-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:119:9-121:69
+136            android:name="com.google.android.gms.version"
+136-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:120:13-58
+137            android:value="@integer/google_play_services_version" />
+137-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:121:13-66
+138
+139        <activity
+139-->[com.karumi:dexter:5.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\cb3696c4bd9bdc47852550f77036903e\jetified-dexter-5.0.0\AndroidManifest.xml:27:9-29:72
+140            android:name="com.karumi.dexter.DexterActivity"
+140-->[com.karumi:dexter:5.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\cb3696c4bd9bdc47852550f77036903e\jetified-dexter-5.0.0\AndroidManifest.xml:28:13-60
+141            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+141-->[com.karumi:dexter:5.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\cb3696c4bd9bdc47852550f77036903e\jetified-dexter-5.0.0\AndroidManifest.xml:29:13-69
+142        <!--
+143             FirebaseMessagingService performs security checks at runtime,
+144             but set to not exported to explicitly avoid allowing another app to call it.
+145        -->
+146        <service
+146-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\ed5e7e863c81118a6f54a9165f33f0f5\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:28:9-34:19
+147            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+147-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\ed5e7e863c81118a6f54a9165f33f0f5\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:29:13-82
+148            android:exported="false" >
+148-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\ed5e7e863c81118a6f54a9165f33f0f5\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:30:13-37
+149            <intent-filter android:priority="-500" >
+149-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:111:13-113:29
+150                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+150-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:112:17-78
+150-->F:\project 2019\Ekaaksh\User\Foodona\app\src\main\AndroidManifest.xml:112:25-75
+151            </intent-filter>
+152        </service>
+153
+154        <receiver
+154-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:29:9-33:20
+155            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+155-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:30:13-85
+156            android:enabled="true"
+156-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:31:13-35
+157            android:exported="false" >
+157-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:32:13-37
+158        </receiver>
+159        <receiver
+159-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:34:9-42:20
+160            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+160-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:35:13-100
+161            android:enabled="true"
+161-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:36:13-35
+162            android:exported="true"
+162-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:37:13-36
+163            android:permission="android.permission.INSTALL_PACKAGES" >
+163-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:38:13-69
+164            <intent-filter>
+164-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:39:13-41:29
+165                <action android:name="com.android.vending.INSTALL_REFERRER" />
+165-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:40:17-79
+165-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:40:25-76
+166            </intent-filter>
+167        </receiver>
+168
+169        <service
+169-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:44:9-47:40
+170            android:name="com.google.android.gms.measurement.AppMeasurementService"
+170-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:45:13-84
+171            android:enabled="true"
+171-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:46:13-35
+172            android:exported="false" />
+172-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:47:13-37
+173        <service
+173-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:48:9-52:72
+174            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+174-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:49:13-87
+175            android:enabled="true"
+175-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:50:13-35
+176            android:exported="false"
+176-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:51:13-37
+177            android:permission="android.permission.BIND_JOB_SERVICE" />
+177-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\a2a37af89ff6b886094f25d7535393e0\play-services-measurement-17.2.0\AndroidManifest.xml:52:13-69
+178        <service
+178-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\e7a47fe6ab9e3dfc00bca59c6b021202\play-services-measurement-api-17.2.0\AndroidManifest.xml:27:9-33:19
+179            android:name="com.google.firebase.components.ComponentDiscoveryService"
+179-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\e7a47fe6ab9e3dfc00bca59c6b021202\play-services-measurement-api-17.2.0\AndroidManifest.xml:28:13-84
+180            android:exported="false" >
+180-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\e7a47fe6ab9e3dfc00bca59c6b021202\play-services-measurement-api-17.2.0\AndroidManifest.xml:29:13-37
+181            <meta-data
+181-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\e7a47fe6ab9e3dfc00bca59c6b021202\play-services-measurement-api-17.2.0\AndroidManifest.xml:30:13-32:85
+182                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+182-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\e7a47fe6ab9e3dfc00bca59c6b021202\play-services-measurement-api-17.2.0\AndroidManifest.xml:31:17-139
+183                android:value="com.google.firebase.components.ComponentRegistrar" />
+183-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\e7a47fe6ab9e3dfc00bca59c6b021202\play-services-measurement-api-17.2.0\AndroidManifest.xml:32:17-82
+184            <meta-data
+184-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\85573c4148afa9d627bdb58c338f2f7a\firebase-iid-20.0.0\AndroidManifest.xml:32:13-34:85
+185                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+185-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\85573c4148afa9d627bdb58c338f2f7a\firebase-iid-20.0.0\AndroidManifest.xml:33:17-96
+186                android:value="com.google.firebase.components.ComponentRegistrar" />
+186-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\85573c4148afa9d627bdb58c338f2f7a\firebase-iid-20.0.0\AndroidManifest.xml:34:17-82
+187        </service>
+188
+189        <receiver
+189-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\85573c4148afa9d627bdb58c338f2f7a\firebase-iid-20.0.0\AndroidManifest.xml:37:9-44:20
+190            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+190-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\85573c4148afa9d627bdb58c338f2f7a\firebase-iid-20.0.0\AndroidManifest.xml:38:13-78
+191            android:exported="true"
+191-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\85573c4148afa9d627bdb58c338f2f7a\firebase-iid-20.0.0\AndroidManifest.xml:39:13-36
+192            android:permission="com.google.android.c2dm.permission.SEND" >
+192-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\85573c4148afa9d627bdb58c338f2f7a\firebase-iid-20.0.0\AndroidManifest.xml:40:13-73
+193            <intent-filter>
+193-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\85573c4148afa9d627bdb58c338f2f7a\firebase-iid-20.0.0\AndroidManifest.xml:41:13-43:29
+194                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+194-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\85573c4148afa9d627bdb58c338f2f7a\firebase-iid-20.0.0\AndroidManifest.xml:42:17-81
+194-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\85573c4148afa9d627bdb58c338f2f7a\firebase-iid-20.0.0\AndroidManifest.xml:42:25-78
+195            </intent-filter>
+196        </receiver> <!-- Needs to be explicitly declared on P+ -->
+197        <uses-library
+197-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\10496f710d269c4bbf750af6c3496e37\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+198            android:name="org.apache.http.legacy"
+198-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\10496f710d269c4bbf750af6c3496e37\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+199            android:required="false" />
+199-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\10496f710d269c4bbf750af6c3496e37\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+200
+201        <provider
+201-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\f47d93387ab382f8a82b6bd47a96f57b\firebase-common-19.0.0\AndroidManifest.xml:12:9-16:39
+202            android:name="com.google.firebase.provider.FirebaseInitProvider"
+202-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\f47d93387ab382f8a82b6bd47a96f57b\firebase-common-19.0.0\AndroidManifest.xml:13:13-77
+203            android:authorities="com.foodona.foodona.firebaseinitprovider"
+203-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\f47d93387ab382f8a82b6bd47a96f57b\firebase-common-19.0.0\AndroidManifest.xml:14:13-72
+204            android:exported="false"
+204-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\f47d93387ab382f8a82b6bd47a96f57b\firebase-common-19.0.0\AndroidManifest.xml:15:13-37
+205            android:initOrder="100" />
+205-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\f47d93387ab382f8a82b6bd47a96f57b\firebase-common-19.0.0\AndroidManifest.xml:16:13-36
+206
+207        <activity
+207-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\4fd23f1c0a576ef4883220502e5e1d72\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+208            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+208-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\4fd23f1c0a576ef4883220502e5e1d72\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+209            android:exported="false"
+209-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\4fd23f1c0a576ef4883220502e5e1d72\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+210            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+210-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Ekaaksh\.gradle\caches\transforms-2\files-2.1\4fd23f1c0a576ef4883220502e5e1d72\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+211    </application>
+212
+213</manifest>

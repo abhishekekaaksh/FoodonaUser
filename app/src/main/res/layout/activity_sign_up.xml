@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rltv_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/img_cross"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            app:srcCompat="@drawable/cab"
+            android:tint="#ffffff" />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="cursive"
+            android:text="Sign Up"
+            android:textColor="#FFF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rltv_tag"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/rltv_top">
+
+        <TextView
+            android:id="@+id/text_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f0752871"
+            android:gravity="center"
+            android:text="Enter Details &amp; Sign up"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrl_user_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rltv_tag">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rltv_sing_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp">
+
+
+
+
+                    <EditText
+                        android:id="@+id/edt_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:hint="Username"
+
+                        android:maxLines="1"
+                        android:paddingLeft="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#e8e7e7" />
+
+
+                    <EditText
+                        android:id="@+id/edt_mob"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:layout_below="@+id/edt_username"
+
+                        android:hint="Mobile No."
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:paddingLeft="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#e8e7e7" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:layout_below="@+id/edt_mob"
+
+                        android:paddingLeft="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#e8e7e7" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/edt_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:layout_below="@+id/edt_email"
+
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:paddingLeft="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#e8e7e7" />
+
+
+
+                    <EditText
+                        android:id="@+id/edt_conf_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:layout_below="@+id/edt_pass"
+
+                        android:paddingLeft="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#e8e7e7" />
+
+
+
+                    <EditText
+                        android:id="@+id/edt_refrel"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:hint="Referral Code"
+                        android:layout_below="@+id/edt_conf_pass"
+
+                        android:maxLines="1"
+                        android:paddingLeft="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#e8e7e7" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_below="@+id/rltv_sing_up"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Go to Sign In"
+                android:textColor="@color/red"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_sign_in"
+                android:layout_marginTop="25dp"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="SIGN UP"
+                android:textColor="#FFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:indicatorColor="#fa0202"
+                app:indicatorName="BallPulseIndicator" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
